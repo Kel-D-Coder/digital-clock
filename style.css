@@ -1,9 +1,10 @@
 body {
    margin: 0%;
    padding: 0%;
-   background-image: url(/img/time.png);
+   background-image: linear-gradient(to top, blue, lightblue);
    background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
 }
 
 .container {
@@ -15,4 +16,13 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 70px;
+}
+
+@media (max-width: 600px) {
+   .container {
+      font-size: 43px;
+      width: 100%;
+      margin-left: 60px;
+      margin-top: -50px;
+   }
 }
