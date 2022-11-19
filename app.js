@@ -6,7 +6,7 @@ function timeDisplay() {
    let min = time.getMinutes();
    let session = document.getElementById("session");
    
-   document.getElementById("hours").textContent = hrs - 12;
+   document.getElementById("hours").textContent = hrs;
    document.getElementById("minutes").textContent = min;
    document.getElementById("seconds").textContent = sec;
 
@@ -15,6 +15,10 @@ function timeDisplay() {
    }
    else {
       session.textContent = "AM";
+   }
+
+   if(hrs > 12) {
+      hrs - 12
    }
 }
 
